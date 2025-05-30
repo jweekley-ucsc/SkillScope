@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SkillScope Interview</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+</head>
+<body class="bg-gray-50 text-gray-800">
+  <div class="max-w-3xl mx-auto py-10 px-4">
+    <h1 class="text-3xl font-bold mb-6">SkillScope Interview</h1>
+
+    <!-- Question -->
+    <div class="mb-6">
+      <h2 class="text-xl font-semibold">Interview Question</h2>
+      <p id="interviewQuestion" class="mt-2 p-4 bg-white rounded shadow"></p>
+    </div>
+
+    <!-- Timer -->
+    <div class="mb-6">
+      <h2 class="text-xl font-semibold">Time Remaining</h2>
+      <div id="countdown" class="text-2xl font-mono text-red-600 mt-2">60:00</div>
+    </div>
+
+    <!-- Recording Controls -->
+    <div class="mb-6">
+      <button id="startRecordingBtn" class="bg-blue-600 text-white px-4 py-2 rounded shadow hover:bg-blue-700">Start Recording</button>
+      <button id="stopRecordingBtn" class="bg-red-600 text-white px-4 py-2 rounded shadow hover:bg-red-700 ml-2 hidden">Stop Recording</button>
+    </div>
+
+    <!-- Transcript Preview -->
+    <div class="mb-6">
+      <h2 class="text-xl font-semibold">Transcript Preview</h2>
+      <pre id="transcriptPreview" class="bg-white p-4 rounded shadow h-64 overflow-y-auto whitespace-pre-wrap text-sm"></pre>
+    </div>
+
+    <!-- Submit Button -->
+    <div>
+      <button id="submitTranscriptBtn" class="bg-green-600 text-white px-4 py-2 rounded shadow hover:bg-green-700 hidden">Submit Transcript</button>
+    </div>
+  </div>
+
+  <script defer src="/static/interview.js"></script>
+</body>
+</html>
